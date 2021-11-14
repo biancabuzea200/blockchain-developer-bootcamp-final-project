@@ -1,3 +1,10 @@
 # blockchain-developer-bootcamp-final-project
-final project for consensys bootcamp
-"#first commit " 
+Blockchain Tweet of Love- final project for consensys bootcamp
+**Concept**
+Blockchain Tweet of Love allows you to record your love declarations on the blockchain, making them eternal. With Blockchain Tweet of Love you have all your love declaratons in one place, and you can see the shape of your love story over the years.
+
+**How Does It Work?**
+You create a love declaration. Limit it to 280 characters.
+You press the "Hash" button and you get the hash of your text.
+you then press the "send it to Eternity" button and you record your message into eternity.
+
