@@ -2,12 +2,12 @@
 Blockchain Tweet of Love- final project for consensys bootcamp
 
 
-**Concept**
+##Concept
 Blockchain Tweet of Love allows you to record your love declarations on the blockchain, making them eternal.
 
 With Blockchain Tweet of Love you have all your love declaratons in one place, and you can see the shape of your love story over the years.
 
-**How Does It Work?**
+##How Does It Work?
 *Sender:*
 
 You create a love declaration. Limit it to 280 characters.
@@ -25,14 +25,14 @@ Press decrypt.
 Check hashes match.
 
 
-**Features***
+##Features
 -input text
 -create hash
 -record hash on the blockchain
 -decrypt hash
 -chech hashees match
 
-**Future improvements**
+##Future improvements
 -store text on IPFS
 
 
