@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/blockchain-developer-bootcamp-final-project/static/css/main.e5b21193.css",
+    "main.js": "/blockchain-developer-bootcamp-final-project/static/js/main.87521799.js",
+    "static/js/787.edd59a96.chunk.js": "/blockchain-developer-bootcamp-final-project/static/js/787.edd59a96.chunk.js",
+    "index.html": "/blockchain-developer-bootcamp-final-project/index.html",
+    "main.e5b21193.css.map": "/blockchain-developer-bootcamp-final-project/static/css/main.e5b21193.css.map",
+    "main.87521799.js.map": "/blockchain-developer-bootcamp-final-project/static/js/main.87521799.js.map",
+    "787.edd59a96.chunk.js.map": "/blockchain-developer-bootcamp-final-project/static/js/787.edd59a96.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5b21193.css",
+    "static/js/main.87521799.js"
+  ]
+}
