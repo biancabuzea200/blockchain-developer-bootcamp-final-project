@@ -16,6 +16,7 @@ Structually, Berghain Entry consists of a contract  `Entrance` that inherits fro
 
 ## Directory Structure
 
+```
 │   .env  
 │   .env.example  
 │   .gitignore  
@@ -68,6 +69,7 @@ Structually, Berghain Entry consists of a contract  `Entrance` that inherits fro
 │  
 └───test  
         sample-test.js  
+```
 
 ## Deploy project locally:
 
