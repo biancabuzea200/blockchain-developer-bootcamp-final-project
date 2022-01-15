@@ -18,6 +18,7 @@
     "hardhat": "^2.8.2"
   },
   "dependencies": {
+    "@appliedblockchain/chainlink-plugins-fund-link": "0.0.3",
     "@chainlink/contracts": "^0.3.1",
     "@openzeppelin/contracts": "^4.4.2",
     "dotenv": "^12.0.3"

@@ -10,4 +10,4 @@
 
 ## Access Control Design Patterns
 
-- `Ownable` design pattern is used to only allow the owner of the contract to let people in
+- `Ownable` design pattern is used to only allow the owner to set blackList status
