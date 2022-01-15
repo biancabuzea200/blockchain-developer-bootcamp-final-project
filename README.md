@@ -103,14 +103,16 @@ Structually, Berghain Entry consists of a contract  `Entrance` that inherits fro
 ### Instructions
 
 1. Clone from `https://github.com/biancabuzea200/blockchain-developer-bootcamp-final-project`
-2. `npm install` to install all dependencies
-3. `npx hardhat test` to perform unit tests
-4. `npx hardhat node` to start the local test node
-5. `npx hardhat run scripts/deploy.js --network rinkeby` to deploy the contract to the Rinkeby test network
+2. `npm install` to install dependencies for smart contract
+3. `cp .env.example .env` to create your own `.env` file; set the `RINKEKY_RPC_URL` (from [alchemy](https://www.alchemy.com/)) and `PRIVATE_KEY` in there
+4. `npx hardhat test` to perform unit tests
+5. `npx hardhat node` to start the local test node
+6. `npx hardhat run scripts/deploy.js --network rinkeby` to deploy the contract to the Rinkeby test network
     NOTE: because the contact uses Chainlink oracle to get a random number, the contract cannot be deployed on your localhost
-6. `npx hardhat fund-link --contract insert-contract-address-here --network rinkeby` to fund the deployed contract with LINK
-6. `cd my-app` to navigate to the frontend folder
-7. `npm start` to start React server populated at http://localhost:3000/
+7. `npx hardhat fund-link --contract insert-contract-address-here --network rinkeby` to fund the deployed contract with LINK
+8. `cd my-app` to navigate to the frontend folder
+9. `npm install` to install dependencies for frontend
+10. `npm start` to start React server populated at http://localhost:3000/
 
 ## Unit Tests Results
   test command `npx hardhat test`
