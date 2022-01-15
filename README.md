@@ -23,7 +23,7 @@ The live webpage can be accessed here: https://biancabuzea200.github.io/blockcha
  My public Ethereum account to receive my certification as an NFT: `0x95E17Ee1fF7AD3d66b260a21b335eA6CF2ce38af`
 
 ## Screencast walking through the project 
-`https://www.loom.com/share/555efd60fa8e4628a3d2f30261cded35`
+https://www.loom.com/share/555efd60fa8e4628a3d2f30261cded35
 
 
 ## Directory Structure
