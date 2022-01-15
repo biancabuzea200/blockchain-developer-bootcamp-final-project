@@ -1,3 +1,7 @@
+body{
+  background-image: url("../public/ber2.jpg");
+}
+
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -12,7 +16,7 @@
   max-width: 600px;
   background-color: darkgoldenrod;
   margin: 22px;
-
+  padding: 10px;
 }
 
 .header {
@@ -29,14 +33,20 @@
   font-size: calc(10px + 2vmin);
 }
 
+.entranceStatus {
+  text-align: center;
+  color:black;
+  text-shadow: blue;
+  margin-top: 16px;
+}
+
 .entranceButton {
   cursor: pointer;
   margin-top: 16px;
   padding: 8px;
   border: 0;
   border-radius: 5px;
-  margin: 22;
-  
+  margin: 12px;
 }
 
 

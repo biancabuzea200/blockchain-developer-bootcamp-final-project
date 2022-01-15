@@ -14,6 +14,10 @@ Structually, Berghain Entry consists of a contract  `Entrance` that inherits fro
 - return the total number of people in the club
 - blacklist the entrance of a person
 
+## Live deployment
+
+The live webpage can be accessed here: https://biancabuzea200.github.io/blockchain-developer-bootcamp-final-project/
+
 ## Directory Structure
 
 ```
@@ -94,6 +98,7 @@ Structually, Berghain Entry consists of a contract  `Entrance` that inherits fro
 - dotenv: ^12.0.3
 - ethereum-waffle: ^3.4.0
 - ethers: ^5.5.3
+- gh-pages: ^3.2.3
 - hardhat: ^2.8.2
 - react: ^17.0.2
 - react-dom: ^17.0.2

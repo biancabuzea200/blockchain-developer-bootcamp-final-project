@@ -8,7 +8,7 @@ const App = () => {
   const [currentStatus, setCurrentStatus] = useState("");
   const [currentPeopleInside, setCurrentPeopleInside] = useState(0);
 
-  const contractAddress = "0xD71Db2521F20381998B5CC92FeB10F00D903D3bB";
+  const contractAddress = "0x92E00d2424cb9B5F2b247Eca9661DA3fE2d7B11e";
   const contractABI = abi.abi;
 
 
@@ -76,10 +76,10 @@ const App = () => {
         const entranceTxn = await entrancePortalContract.letMeIn();
         console.log("Mining...", entranceTxn.hash);
 
+        setCurrentStatus("Please hold on! Waiting for a response...");
+
         await entranceTxn.wait();
         console.log("Mined -- ", entranceTxn.hash);
-
-        setCurrentStatus("Please hold on! Waiting for a response...");
         
         await new Promise(resolve => setTimeout(resolve, 30000));
 
@@ -165,29 +165,31 @@ const App = () => {
     <div className="mainContainer">
       <div className="dataContainer">
         <div className="header">
-        Welcome to Berghain!Let's see if you can get in. 
+          Welcome to Berghain!Let's see if you can get in. 
         </div>
 
-        <div className="bio">
-         Connect your Ethereum wallet on Rinkeby and enter!
-        </div>
+        {!currentAccount && (
+          <div className="bio">
+            Connect your Ethereum wallet on Rinkeby and enter!
+          </div>
+        )}
 
-        <div>
+        <h2 className="entranceStatus">
           {currentStatus}
-        </div>
-
-        <button className="entranceButton" onClick={letIn}>
-          Can I get in?
-        </button>
+        </h2>
 
         {/*
         * If there is no currentAccount render this button
         */}
-        {!currentAccount && (
+        {!currentAccount ? 
           <button className="entranceButton" onClick={connectWallet}>
             Connect Wallet
           </button>
-        )}
+          :
+          <button className="entranceButton" onClick={letIn}>
+            Can I get in?
+          </button>
+        }
         
         <h1>Total number of people in is currently {currentPeopleInside}</h1>
       </div>
