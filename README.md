@@ -6,7 +6,7 @@ Berghain Entry: A Dapp that simulates the entrance to the popular Berlin club Be
 
 The Dapp allows poeple to enter the club or denies entry based on LUCK, totally random, pretty much as it happens at the real Berghain club.
 
-Structually, Berghain Entry consists of a contract  `Entrance` that inherits from the Chainlink VRFBase interface to generate a random number that represents whether the person is allowed to enter the club or not.
+Structually, Berghain Entry consists of a contract  `Entrance` that inherits from the Chainlink VRFBase interface to generate a random number that represents whether the person is allowed to enter the club or not. 
 
 `Entrance` contract can:
 - let randomly a person in
@@ -16,101 +16,58 @@ Structually, Berghain Entry consists of a contract  `Entrance` that inherits fro
 
 ## Directory Structure
 
-├───artifacts
-│   ├───@chainlink
-│   │   └───contracts
-│   │       └───src
-│   │           └───v0.8
-│   │               ├───interfaces
-│   │               │   └───LinkTokenInterface.sol
-│   │               ├───VRFConsumerBase.sol
-│   │               └───VRFRequestIDBase.sol
-│   ├───@openzeppelin
-│   │   └───contracts
-│   │       ├───access
-│   │       │   └───Ownable.sol
-│   │       └───utils
-│   │           └───Context.sol
-│   ├───build-info
-│   ├───contracts
-│   │   ├───Entrance.sol
-│   │   └───Greeter.sol
-│   └───hardhat
-│       └───console.sol
-├───cache
-├───contracts
-├───my-app
-│   ├───public
-│   └───src
-│       └───utils
-├───scripts
-└───test
-
-C:\Users\Bianca\Desktop\backup tree>tree /?
-Graphically displays the folder structure of a drive or path.
-
-TREE [drive:][path] [/F] [/A]
-
-   /F   Display the names of the files in each folder.
-   /A   Use ASCII instead of extended characters.
-
-
-C:\Users\Bianca\Desktop\backup tree>tree /F
-Folder PATH listing for volume Windows-SSD
-Volume serial number is F8AF-2228
-C:.
-│   .env
-│   .env.example
-│   .gitignore
-│   avoiding_common_attacks.md
-│   deployed_address.txt
-│   design_pattern_decisions.md
-│   hardhat.config.js
-│   LICENSE
-│   package-lock.json
-│   package.json
-│   README.md
-│
-├───artifacts
-││
-├───contracts
-│       Entrance.sol
-│
-├───my-app
-│   │   .gitignore
-│   │   package-lock.json
-│   │   package.json
-│   │   README.md
-│   │
-│   ├───public
-│   │       ber2.jpg
-│   │       favicon.ico
-│   │       index.html
-│   │       logo192.png
-│   │       logo512.png
-│   │       manifest.json
-│   │       robots.txt
-│   │
-│   └───src
-│       │   App.css
-│       │   App.js
-│       │   App.test.js
-│       │   index.css
-│       │   index.js
-│       │   logo.svg
-│       │   reportWebVitals.js
-│       │   setupTests.js
-│       │
-│       └───utils
-│               EntrancePortal.json
-│
-├───scripts
-│       deploy.js
-│       run.js
-│       sample-script.js
-│
-└───test
-        sample-test.js
+│   .env  
+│   .env.example  
+│   .gitignore  
+│   avoiding_common_attacks.md  
+│   deployed_address.txt  
+│   design_pattern_decisions.md  
+│   hardhat.config.js  
+│   LICENSE  
+│   package-lock.json  
+│   package.json  
+│   README.md  
+│  
+├───artifacts  
+│  
+├───contracts  
+│       Entrance.sol  
+│  
+├───my-app  
+│   │   .gitignore  
+│   │   package-lock.json  
+│   │   package.json  
+│   │   README.md  
+│   │  
+│   ├───public  
+│   │       ber2.jpg  
+│   │       favicon.ico  
+│   │       index.html  
+│   │       logo192.png  
+│   │       logo512.png  
+│   │       manifest.json  
+│   │       robots.txt  
+│   │  
+│   └───src  
+│       │   App.css  
+│       │   App.js  
+│       │   App.test.js  
+│       │   index.css  
+│       │   index.js  
+│       │   logo.svg  
+│       │   reportWebVitals.js  
+│       │   setupTests.js  
+│       │  
+│       └───utils  
+│               EntrancePortal.json  
+│  
+├───scripts  
+│       deploy.js  
+│       run.js  
+│       sample-script.js  
+│  
+└───test  
+        sample-test.js  
 
 ## Deploy project locally:
 
@@ -153,16 +110,13 @@ C:.
 6. `cd my-app` to navigate to the frontend folder
 7. `npm start` to start React server populated at http://localhost:3000/
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+## Unit Tests Results
+  test command `npx hardhat test`
+  Entrance
 
-Try running some of the following tasks:
+    √ Should return the initial number of people in as 0 (888ms)
+    √ Cannot check status if has not requested access (123ms)
+    √ Cannot blacklist an address if not the owner (117ms)
+    √ Can blacklist an address if the caller is the owner (122ms)
+    √ Does not permit to request entrance for a blacklisted address (104ms)
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
