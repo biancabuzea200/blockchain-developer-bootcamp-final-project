@@ -18,6 +18,12 @@ Structually, Berghain Entry consists of a contract  `Entrance` that inherits fro
 
 The live webpage can be accessed here: https://biancabuzea200.github.io/blockchain-developer-bootcamp-final-project/
 
+## Public Ethereum Address for NFT
+
+ My public Ethereum account to receive my certification as an NFT: `0x95E17Ee1fF7AD3d66b260a21b335eA6CF2ce38af`
+
+ ## 
+
 ## Directory Structure
 
 ```

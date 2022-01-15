@@ -165,7 +165,7 @@ const App = () => {
     <div className="mainContainer">
       <div className="dataContainer">
         <div className="header">
-          Welcome to Berghain!Let's see if you can get in. 
+          Welcome to Berghain! Let's see if you can get in. 
         </div>
 
         {!currentAccount && (
