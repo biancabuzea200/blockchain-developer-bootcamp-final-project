@@ -186,12 +186,14 @@ const App = () => {
             Connect Wallet
           </button>
           :
-          <button className="entranceButton" onClick={letIn}>
-            Can I get in?
-          </button>
+          <div>
+            <button className="entranceButton" onClick={letIn}>
+              Can I get in?
+            </button>
+            <h1>Total number of people in is currently {currentPeopleInside}</h1>
+          </div>
         }
         
-        <h1>Total number of people in is currently {currentPeopleInside}</h1>
       </div>
     </div>
   );
