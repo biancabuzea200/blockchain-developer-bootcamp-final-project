@@ -9,9 +9,9 @@ Instead of using weak sources of randomness such as 'block.timestamp', 'block.di
 
 ## SWC-131 (Presence of unused variables)
 
-Even though unused variables are allowed in Solidity, it is best practice too be avoided as they can cause an increase in computation/ cause code noise and decrease readability
+Even though unused variables are allowed in Solidity, it is best practice to be avoided as they can cause an increase in computation/cause code noise and decrease readability
 
 
 ## Proper Use of Require, Assert and Revert
 
-Use require statements throughout for validation of inputs, external call returns and variables before state changes.
+Use `require` statements throughout for validation of inputs, external call returns and variables before state changes.

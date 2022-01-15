@@ -111,16 +111,17 @@ The live webpage can be accessed here: https://biancabuzea200.github.io/blockcha
 2. `npm install` to install dependencies for smart contract
 3. `cp .env.example .env` to create your own `.env` file; set the `RINKEKY_RPC_URL` (from [alchemy](https://www.alchemy.com/)) and `PRIVATE_KEY` in there
 4. `npx hardhat test` to perform unit tests
-5. `npx hardhat node` to start the local test node
-6. `npx hardhat run scripts/deploy.js --network rinkeby` to deploy the contract to the Rinkeby test network
+5. `npx hardhat run scripts/deploy.js --network rinkeby` to deploy the contract to the Rinkeby test network
     NOTE: because the contact uses Chainlink oracle to get a random number, the contract cannot be deployed on your localhost
-7. `npx hardhat fund-link --contract insert-contract-address-here --network rinkeby` to fund the deployed contract with LINK
-8. `cd my-app` to navigate to the frontend folder
-9. `npm install` to install dependencies for frontend
-10. `npm start` to start React server populated at http://localhost:3000/
+6. `npx hardhat fund-link --contract insert-contract-address-here --network rinkeby` to fund the deployed contract with LINK
+7. `cd my-app` to navigate to the frontend folder
+8. `npm install` to install dependencies for frontend
+9. `npm start` to start React server populated at http://localhost:3000/
 
 ## Unit Tests Results
-  test command `npx hardhat test`
+  Test command: `npx hardhat test`
+
+```
   Entrance
 
     √ Should return the initial number of people in as 0 (888ms)
@@ -128,4 +129,4 @@ The live webpage can be accessed here: https://biancabuzea200.github.io/blockcha
     √ Cannot blacklist an address if not the owner (117ms)
     √ Can blacklist an address if the caller is the owner (122ms)
     √ Does not permit to request entrance for a blacklisted address (104ms)
-
+```
